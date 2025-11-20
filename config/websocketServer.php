@@ -5,7 +5,7 @@ return [
     #'host' => env('WEBSOCKET_SERVER_HOST', '0.0.0.0'),
 	'host' => '0.0.0.0',
     'port' => env('WEBSOCKET_SERVER_PORT', '9051'),
-    'token'=> env('WEBSOCKET_TOKEN', 'kXx3FbVxYLGUTgeXPxrxBHG4AsZ2qQhM'),
+    'token'=> env('WEBSOCKET_TOKEN'),
 
     /*
     |--------------------------------------------------------------------------

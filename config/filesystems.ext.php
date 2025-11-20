@@ -47,28 +47,28 @@ return [
 
         'import-file' => [
             'driver' => 'qiniu',
-            'access_key'=> env('QINIU_ACCESS_KEY', 'wTHrpmk-brD6l5rJzKci9xLK_SMhjFePhRogGm9a'),
-            'secret_key' => env('QINIU_SECRET_KEY', 'yWRq4fiX256HUVHXRktRKw08QIKZgbH9P2p58YLM'),
-            'bucket' => env('QINIU_FILE_NAME', 'espier-file'),
-            'domain' => env('QINIU__FILE_DOMAIN', 'https://b-import-cdn.yuanyuanke.cn'),
+            'access_key'=> env('QINIU_ACCESS_KEY'),
+            'secret_key' => env('QINIU_SECRET_KEY'),
+            'bucket' => env('QINIU_FILE_NAME'),
+            'domain' => env('QINIU__FILE_DOMAIN'),
             'region' => env('QINIU_FILE_REGION', 'z2'),
         ],
 
         'import-image' => [
             'driver' => 'qiniu',
-            'access_key'=> env('QINIU_ACCESS_KEY', 'wTHrpmk-brD6l5rJzKci9xLK_SMhjFePhRogGm9a'),
-            'secret_key' => env('QINIU_SECRET_KEY', 'yWRq4fiX256HUVHXRktRKw08QIKZgbH9P2p58YLM'),
+            'access_key'=> env('QINIU_ACCESS_KEY'),
+            'secret_key' => env('QINIU_SECRET_KEY'),
             'bucket' => env('QINIU_IMAGE_NAME'),
-            'domain' => env('QINIU_IMAGE_DOMAIN', 'https://b-img-cdn.yuanyuanke.cn'),
+            'domain' => env('QINIU_IMAGE_DOMAIN'),
             'region' => env('QINIU_IMAGE_REGION', 'z2'),
         ],
 
         'import-videos' => [
             'driver' => 'qiniu',
-            'access_key'=> env('QINIU_ACCESS_KEY', 'wTHrpmk-brD6l5rJzKci9xLK_SMhjFePhRogGm9a'),
-            'secret_key' => env('QINIU_SECRET_KEY', 'yWRq4fiX256HUVHXRktRKw08QIKZgbH9P2p58YLM'),
+            'access_key'=> env('QINIU_ACCESS_KEY'),
+            'secret_key' => env('QINIU_SECRET_KEY'),
             'bucket' => env('QINIU_VIDEO_NAME'),
-            'domain' => env('QINIU_VIDEO_DOMAIN', 'https://b-video-cdn.yuanyuanke.cn'),
+            'domain' => env('QINIU_VIDEO_DOMAIN'),
             'region' => env('QINIU_VIDEO_REGION', 'z2'),
         ],
     ],

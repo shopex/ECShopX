@@ -24,7 +24,7 @@ return [
     'tips_ws_key' => env('TIPS_WS_KEY'),
     'use_system_menu' => env('USE_SYSTEM_MENU'), // 是否使用系统菜单,false则是固定菜单，true则更新storage/static/目录下的菜单
     'product_model' => env('PRODUCT_MODEL', 'platform'), // 系统版本，standard|platform
-    'api_token' => env('API_TOKEN', 'Os6Bass1oT5vig2Yod0yiT8dU0as5cIn'),
+    'api_token' => env('API_TOKEN'),
     'jwt_secret' => env('JWT_SECRET'), // jwt密钥
     'tips_ws_uri' => env('TIPS_WS_URI'),
     'wechat_payment_notify' => env('WECHAT_PAYMENT_NOTIFY', env('APP_URL').'/wechatAuth/wxpay/notify'), // 微信支付通知回调地址。示例：https://后台域名/wechatAuth/wxpay/notify
@@ -40,7 +40,7 @@ return [
     'fapiao_hangxin_key' => env('FAPIAO_HANGXIN_KEY'),
     'verify_app_id' => env('VERIFY_APP_ID', 'ecos.ecshopx'), // 对应矩阵appid
     'certi_base_url' => env('CERTI_BASE_URL', env('APP_URL')), # 对接saas ERP的配置信息 URL
-    'store_key' => env('STORE_KEY', '59887c5ceec36fa1a9d9a72c6cdf3741'), # 对接saas ERP的配置信息 KEY
+    'store_key' => env('STORE_KEY'), # 对接saas ERP的配置信息 KEY
     'matrix_realtion_url' => env('MATRIX_REALTION_URL', 'https://iframe.shopex.cn/?'), // 矩阵关系绑定API
     'matrix_api_url' => env('MATRIX_API_URL', 'http://matrix.ecos.shopex.cn/sync'), // 矩阵API
     'pc_wxcode_login' => env('PC_WXCODE_LOGIN', 120), // pc端扫码登录码有效期，单位秒
@@ -80,7 +80,7 @@ return [
     'dada_app_secret' => env('DADA_APP_SECRET'),// 达达同城配送app_secret
     'dada_is_online' => env('DADA_IS_ONLINE', false),// 达达同城配送是否为线上
     'api_base_url' => env('API_BASE_URL', env('APP_URL').'/api/'),// 达达同城配API地址
-    'rand_salt' => env('RAND_SALT', 'tEJOIkPoKPWu3dfa'),
+    'rand_salt' => env('RAND_SALT'),
     // 定位服务
     "map" => [
         // 腾讯地图
@@ -92,7 +92,7 @@ return [
         // 高德地图
         "amap"    => [
             'baseuri'    => env('API_AMAP_POSITION_BASEURI', 'https://restapi.amap.com'),
-            'app_key'    => env('API_AMAP_POSITION_APP_KEY', '1ccc1ebc947719886f0cd766d70241fe'),
+            'app_key'    => env('API_AMAP_POSITION_APP_KEY'),
             'app_secret' => env('API_AMAP_POSITION_APP_SECRET', ''),
             // 高德地图的猎鹰轨迹
             "track" => [
@@ -113,7 +113,6 @@ return [
     'employee_purchanse_sharecode_expire' => env('EMPLOYEE_PURCHANSE_SHARECODE_EXPIRE', 86400),// 员工内购分享cocd过期时间（秒数）
     'employee_purchanse_buy_inactive' => env('EMPLOYEE_PURCHANSE_BUY_INACTIVE', true), // 没有开启的内购活动不能下单
     'employee_purchanse_dependents_hour' => env('EMPLOYEE_PURCHANSE_DEPENDENTS_HOUR', 24),// 员工内购亲友开始时间晚于员工时间（小时）
-    'shop_admin_url' => env('SHOP_ADMIN_URL', ''),// 管理后台地址,结尾带斜杠
     'demo_company_id' => env('DEMO_COMPANY_ID', ''),
     'chinaums_payment_notify' => env('CHINAUMS_PAYMENT_NOTIFY'),
     'local_delivery_dirver' => env('LOCAL_DELIVERY_DIRVER', 'dada'),

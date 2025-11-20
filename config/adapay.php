@@ -9,7 +9,7 @@ return [
     'notify_url' => env('ADAPAY_NOTIFY_URL'),
     'gate_way_url' => env('ADAPAY_GATE_WAY_URL', 'https://%s.adapay.tech'),
     'fee_mode' => env('ADAPAY_FEE_MODE', 'O'),
-    'rsa_public_key' => env('ADAPAY_RSA_PUBLIC_KEY', 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwN6xgd6Ad8v2hIIsQVnbt8a3JituR8o4Tc3B5WlcFR55bz4OMqrG/356Ur3cPbc2Fe8ArNd/0gZbC9q56Eb16JTkVNA/fye4SXznWxdyBPR7+guuJZHc/VW2fKH2lfZ2P3Tt0QkKZZoawYOGSMdIvO+WqK44updyax0ikK6JlNQIDAQAB'),
+    'rsa_public_key' => env('ADAPAY_RSA_PUBLIC_KEY'),
     
     //商户菜单控制  
     //valid 已开户 invalid 未开户; example: admin->valid 主商户已开户需要禁用的菜单项; dealer->invalid (adapay)经销商未开户需要禁用的菜单项
